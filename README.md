@@ -1,4 +1,4 @@
-# GitLab CE Pages [![Build Status](https://travis-ci.org/YuMS/gitlab-ce-pages.svg?branch=master)](https://travis-ci.org/YuMS/gitlab-ce-pages) [![GitHub tag](https://img.shields.io/github/tag/yums/gitlab-ce-pages.svg?maxAge=2592000)]() [![Docker Pulls](https://img.shields.io/docker/pulls/yums/gitlab-ce-pages.svg)]()
+# GitLab CE Pages [![Build Status](https://travis-ci.org/chikei/gitlab-ce-pages.svg?branch=master)](https://travis-ci.org/chikei/gitlab-ce-pages) [![GitHub tag](https://img.shields.io/github/tag/chikei/gitlab-ce-pages.svg?maxAge=2592000)]() [![Docker Pulls](https://img.shields.io/docker/pulls/chikei/gitlab-ce-pages.svg)]()
 
 ## the Largest Milestone w/o Feature Update - the GRAVESTONE
 
