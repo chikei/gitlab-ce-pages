@@ -74,7 +74,7 @@ function check_latest(body, callback) {
   const pid = body.project_id;
   const bid = body.build_id;
   const options = {
-    url: url.resolve(gitlabUrl, 'api/v3/projects/' + pid + '/builds' + '?scope=success'),
+    url: url.resolve(gitlabUrl, 'api/v4/projects/' + pid + '/jobs' + '?scope=success'),
     headers: {
       'PRIVATE-TOKEN': privateToken
     }
@@ -114,7 +114,7 @@ function update(body, pageDir) {
     const pid = body.project_id;
     const bid = body.build_id;
     const options = {
-      url: url.resolve(gitlabUrl, 'api/v3/projects/' + pid + '/builds/' + bid + '/artifacts'),
+      url: url.resolve(gitlabUrl, 'api/v4/projects/' + pid + '/jobs/' + bid + '/artifacts'),
       headers: {
         'PRIVATE-TOKEN': privateToken
       }
