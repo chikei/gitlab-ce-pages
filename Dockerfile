@@ -2,9 +2,9 @@ FROM nginx:stable
 MAINTAINER yumaoshu@gmail.com
 
 RUN apt-get update \
-    && apt-get install --no-install-recommends -y curl
+    && apt-get install --no-install-recommends -y curl apt-transport-https ca-certificates gnupg1
 
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN curl -sSL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs --no-install-recommends
 
 RUN apt-get install --no-install-recommends -y unzip sed
