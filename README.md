@@ -48,7 +48,7 @@ The only ~~supported~~ encouraged way to run **GCP** is with [Docker](https://ww
  * Get Docker image
 
  ```
-  docker pull yums/gitlab-ce-pages:1.3.4
+  docker pull chikei/gitlab-ce-pages:1.3.5
  ```
 
  * Run Docker container with
@@ -61,7 +61,7 @@ The only ~~supported~~ encouraged way to run **GCP** is with [Docker](https://ww
       --volume /srv/gitlab-ce-pages/public:/home/pages/public/ \
       --volume /srv/gitlab-ce-pages/cname:/home/pages/cname/ \
       -p 80:80 \
-      yums/gitlab-ce-pages:1.3.4
+      chikei/gitlab-ce-pages:1.3.5
  ```
 
  * Tell your GitLab users the URL of your **GCP** server. They will use it as **webhook URL**. Note that this URL is the one which can actually access your running Docker instance's exposed port.
@@ -135,7 +135,7 @@ You can easily upgrade your GCP in following steps:
  * pull latest image
 
  ```
-  docker pull yums/gitlab-ce-pages:1.3.4
+  docker pull chikei/gitlab-ce-pages:1.3.5
  ```
 
  * remove running image
@@ -154,7 +154,7 @@ You can easily upgrade your GCP in following steps:
       --volume /srv/gitlab-ce-pages/public:/home/pages/public/ \
       --volume /srv/gitlab-ce-pages/cname:/home/pages/cname/ \
       -p 80:80 \
-      yums/gitlab-ce-pages:1.3.4
+      chikei/gitlab-ce-pages:1.3.5
  ```
 
 ## Environment variables
@@ -172,7 +172,7 @@ This is a sample `docker-compose.yml` file for you if you want to use docker-com
 
     gitlab-ce-pages:
       restart: always
-      image: yums/gitlab-ce-pages:1.3.4
+      image: chikei/gitlab-ce-pages:1.3.5
       environment:
         - PAGE_PRIVATE_TOKEN=private_token_of_peeking_account
         - GITLAB_URL=http://gitlab.example.com/

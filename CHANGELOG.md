@@ -1,4 +1,6 @@
 # Changelog
+**1.3.5**
+- Upgrade GitLab API to v4
 
 **1.3.4**
 - revert changes except tests in 1.3.1-1.3.3 to make relative path behavior consistent
